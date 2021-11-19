@@ -53,6 +53,7 @@ class MealController extends Controller
         Meal::insert([
             'type' => $request->type,
             'expense' => $request->expense,
+            'person_count' => $request->person_count,
             'user_id' => Auth::user()->id,
             'created_at' => Carbon::now()
         ]);
@@ -95,6 +96,7 @@ class MealController extends Controller
         $meal = Meal::find($id);
         $meal->type=$request->type;
         $meal->expense=$request->expense;
+        $meal->person_count = $request->person_count;
         $meal->save();
         return redirect('/');
     }

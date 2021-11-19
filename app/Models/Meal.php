@@ -13,7 +13,8 @@ class Meal extends Model
 
     protected $fillable = [
         'user_id',
-        'type'
+        'type',
+        'person_count',
     ];
 
     public function user(){

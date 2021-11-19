@@ -29,5 +29,8 @@ Route::middleware(['auth:sanctum', 'verified'])->put('/update-meal/{id}', [MealC
 Route::middleware(['auth:sanctum', 'verified'])->get('/delete-meal/{id}', [MealController::class, 'destroy'])->name('delete-meal');
 
 //Routes for generating reports
-Route::middleware(['auth:sanctum', 'verified'])->get('/report', [ReportController::class, 'lastdayreport'])->name('lastdayreport');
+Route::middleware(['auth:sanctum', 'verified'])->get('/report/{day}', [ReportController::class, 'report'])->name('report');
 
+Route::middleware(['auth:sanctum', 'verified'])->post('/dynamic', [ReportController::class, 'dynamic'])->name('dynamic');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/range', [ReportController::class, 'range'])->name('range');

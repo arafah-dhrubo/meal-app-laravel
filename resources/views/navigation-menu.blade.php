@@ -18,8 +18,17 @@
                     <x-jet-nav-link href="{{ route('add-meal') }}" :active="request()->routeIs('add-meal')">
                         {{ __('Add Meal') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{route('lastdayreport')}}">
+                    <x-jet-nav-link href="{{route('report', ['day'=>1])}}">
                         {{ __('Report') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{route('report', ['day'=>7])}}">
+                        {{ __('Last Week Report') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{route('report', ['day'=>30])}}">
+                        {{ __('Last Month Report') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{route('range')}}">
+                        {{ __('Range') }}
                     </x-jet-nav-link>
                 </div>
             </div>

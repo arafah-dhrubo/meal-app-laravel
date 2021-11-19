@@ -17,6 +17,7 @@
                                 <th class="px-4 py-3">Added By</th>
                                 <th class="px-4 py-3">Expense</th>
                                 <th class="px-4 py-3">Meal Type</th>
+                                <th class="px-4 py-3">Person Count</th>
                                 <th class="px-4 py-3">Date Added</th>
                                 <th class="px-4 py-3">Date Updated</th>
                                 <th class="px-4 py-3">Action</th>
@@ -64,6 +65,9 @@
                                             </span>
 
                                         @endif
+                                    </td>
+                                    <td class="px-4 py-3 text-sm">
+                                        {{ $value->person_count }}
                                     </td>
                                     <td class="px-4 py-3 text-sm">
                                         {{ $value->created_at->diffForHumans() }}

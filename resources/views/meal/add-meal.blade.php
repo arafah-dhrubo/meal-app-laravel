@@ -15,6 +15,8 @@
                     <option value={{$key}} class="w-full">{{$value}}</option>
                     @endforeach
                 </select><br>
+                   <label for="person_count">Total Person</label><br>
+                <input type="number" name="person_count" placeholder="Total Person" id="person_count" class="w-full mb-5 focus:outline-none border-none focus:border-none p-3 rounded-sm"><br>
                 <label for="expense">Expense:</label><br>
                 <input type="number" name="expense" placeholder="Today's Expense" id="expense" class="w-full mb-5 focus:outline-none border-none focus:border-none p-3 rounded-sm"><br>
                 <input type="submit" value="Add Meal" class="w-full bg-purple-600 p-3 text-white font-semibold">
