@@ -1,66 +1,44 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# LaraMeal
+### A meal budgeting app using laravel
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This app is basically made for any organization for keeping detail reports for their meal plan.
 
-## About Laravel
+## Features
+- Authenticated users can add meal type, person count and expenses. 
+- All members can see who added the meal report.
+- Daily, weekly, monthly, custom date range report can be generated
+- Weekly report will be send to the admin email address of that organization.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Common Features
+- New user create account and login
+- Create/Read/Update/Delete meal report from the list
+- Users can update profile picture and also change password
+- Pagination is available if the **report list** is index>5
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Upcomming Features
+- UI change
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Important Links
+| Type | Link |
+| ------ | ------ |
+| Demo Video (loom) | https://www.loom.com/share/a3bbd00ec8704771b1a3b331bffc5241?sharedAppSource=personal_library |
+| Demo Site | http://larameal.herokuapp.com/ |
 
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-- **[Romega Software](https://romegasoftware.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Demo Account
+```sh
+email: testuser@gmail.com
+password: testuser
+```
+## Screenshots
+### Register Account
+![Alt text](https://i.ibb.co/Qc361ms/Screenshot-from-2021-12-01-09-32-38.png)
+### Login
+![Alt text](https://i.ibb.co/nwxvR6c/Screenshot-from-2021-12-01-09-31-43.png)
+### Add meal report
+![Alt text](https://i.ibb.co/2c40hr2/Screenshot-from-2021-12-01-09-33-21.png)
+### Generate weekly report
+![Alt text](https://i.ibb.co/R77gCRF/Screenshot-from-2021-12-01-09-34-55.png)
+### Dashboard
+![Alt text](https://i.ibb.co/cTZX6Rr/Screenshot-from-2021-12-01-09-34-27.png)
+### Mail Sended Successfully
+![Alt text](https://i.ibb.co/ZGNH0rX/Screenshot-from-2021-12-01-09-48-42.png)
