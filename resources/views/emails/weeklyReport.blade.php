@@ -25,18 +25,18 @@ This mail contains Weekly report of your Team.
 
         <tr>
             <td>Snacks</td>
-            <td>{{ $body->expense_for_snacks }}</td>
-            <td>{{ $body->person_for_snacks }}</td>
+            <td>{{ $body["expense_for_snacks"]}}</td>
+            <td>{{ $body["person_for_snacks"] }}</td>
         </tr>
         <tr>
             <td>Lunch</td>
-            <td>{{ $body->expense_for_lunch }}</td>
-            <td>{{ $body->person_for_lunch }}</td>
+            <td>{{ $body["expense_for_lunch"] }}</td>
+            <td>{{ $body["person_for_lunch"] }}</td>
         </tr>
         <tr>
             <td>Party</td>
-            <td>{{ $body->expense_for_party }}</td>
-            <td>{{ $body->person_for_party }}</td>
+            <td>{{ $body["expense_for_party"] }}</td>
+            <td>{{ $body["person_for_party"] }}</td>
         </tr>
     </tbody>
 </table>
